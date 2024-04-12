@@ -1,7 +1,17 @@
+
 .app-details {
-    margin: 20px;
+    background-color: #176B87;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
-  
+  .image{
+    height:5rem;
+    width:10rem;
+  }
   .loading {
     font-size: 18px;
     font-weight: bold;
@@ -29,4 +39,14 @@
   .phone {
     font-style: italic;
   }
-  
+  .app-form{
+    background-color: #f6f2f2;
+    height:80%;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 5rem;
+    border-radius: 5px;
+    margin:4rem;
+    border:1px solid #64ccc5;
+    box-shadow: 0 0 10px #64ccc5;
+  }

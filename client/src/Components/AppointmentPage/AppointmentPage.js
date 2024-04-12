@@ -15,26 +15,26 @@ const AppointmentPage = () => {
   const doctors = [
     { 
       id: 1, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
+      name: 'Dr. Jiya Malik', 
+      specialization: 'Psychiatrist', 
       experience: '10 years', 
       consultationFee: '$100', 
       patientsTreated: 500,
-      image: '99.jpeg' // Add image file name or URL
+      image: '101.jpeg' // Add image file name or URL
     },
     { 
       id: 2, 
       name: 'Dr. Jane Smith', 
-      specialization: 'Pediatrician', 
+      specialization: 'Sr. Pyschologist', 
       experience: '8 years', 
       consultationFee: '$80', 
       patientsTreated: 700,
-      image: '99.jpeg' // Add image file name or URL
+      image: '113.jpeg' // Add image file name or URL
     },
     { 
       id: 3, 
       name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
+      specialization: 'Counseling Psychologist', 
       experience: '10 years', 
       consultationFee: '$100', 
       patientsTreated: 500,
@@ -42,49 +42,49 @@ const AppointmentPage = () => {
     },
     { 
       id: 4, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
+      name: 'Dr. Renu Bharti', 
+      specialization: 'Pyschologist', 
       experience: '10 years', 
       consultationFee: '$100', 
       patientsTreated: 500,
-      image: '99.jpeg'// Add image file name or URL
+      image: '102.jpeg'// Add image file name or URL
     },
     
     { 
       id: 5, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
-      experience: '10 years', 
-      consultationFee: '$100', 
+      name: 'Dr. Charvi Gupta', 
+      specialization: 'Psychotherapist', 
+      experience: '17 years', 
+      consultationFee: '$150', 
       patientsTreated: 500,
-      image: '99.jpeg' // Add image file name or URL
+      image: '105.jpeg' // Add image file name or URL
     },
     { 
       id: 6, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
-      experience: '10 years', 
+      name: 'Dr. Chirag Verma', 
+      specialization: 'Psychotherapist', 
+      experience: '15 years', 
       consultationFee: '$100', 
       patientsTreated: 500,
-      image: '99.jpeg' // Add image file name or URL
+      image: '111.jpeg' // Add image file name or URL
     },
     { 
       id: 7, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
-      experience: '10 years', 
+      name: 'Dr. Riddhi Rustagi', 
+      specialization: 'Pyschologist', 
+      experience: '14 years', 
       consultationFee: '$100', 
-      patientsTreated: 500,
-      image: '99.jpeg' // Add image file name or URL
+      patientsTreated: 400,
+      image: '104.jpeg' // Add image file name or URL
     },
     { 
       id: 8, 
-      name: 'Dr. John Doe', 
-      specialization: 'Cardiologist', 
-      experience: '10 years', 
-      consultationFee: '$100', 
-      patientsTreated: 500,
-      image: '99.jpeg' // Add image file name or URL
+      name: 'Dr. Ritu Rani', 
+      specialization: 'Pyschologist', 
+      experience: '6 years', 
+      consultationFee: '$70', 
+      patientsTreated: 300,
+      image: '105.jpeg' // Add image file name or URL
     },
     // Add more doctors with their respective information
   ];

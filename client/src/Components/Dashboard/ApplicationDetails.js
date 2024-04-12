@@ -34,26 +34,28 @@ function AppDetails() {
 
   return (
     <div className="app-details">
-      <h1>Application Details</h1>
+      <div className='app-form'>
+      <h1 className='Dona-head'>Application Details</h1>
       <div className="image">
   {application.proofs && application.proofs[0] && (
     <img src={application.proofs[0].url} alt='Image' style={{ width: '10%', height: '10%' }}/>
   )}
 </div>
-      <p>Name: {application.contactDetails?.name}</p>
-      <p>Email: {application.contactDetails?.email}</p>
-      <p>Phone: {application.contactDetails?.phone}</p>
-      <p>Date Of Birth: {new Date(application.dateOfBirth).toLocaleDateString()}</p>
-      <p>Address: {application.contactDetails?.address}</p>
-      <p>Location: {application.location}</p>
-      <p>Type of Disaster: {application.typeOfDisaster}</p>
-      <p>Details of Loss: {application.detailsOfLoss}</p>
-      <p>Compensation Amount: {application.compensationAmount}</p>
-      <p>Date of Disaster: {new Date(application.dateOfDisaster).toLocaleDateString()}</p>
-      <p>Bank Name: {application.bankDetails?.bankName}</p>
-      <p>Account Number: {application.bankDetails?.accountNumber}</p>
-      <p>Account Holder Name: {application.bankDetails?.accountHolderName}</p>
+      <p><span>Name: </span>{application.contactDetails?.name}</p>
+      <p><span>Email: </span>{application.contactDetails?.email}</p>
+      <p><span>Phone: </span>{application.contactDetails?.phone}</p>
+      <p><span>Date Of Birth: </span>{new Date(application.dateOfBirth).toLocaleDateString()}</p>
+      <p><span>Address: </span>{application.contactDetails?.address}</p>
+      <p><span>Location: </span>{application.location}</p>
+      <p><span>Type of Disaster: </span>{application.typeOfDisaster}</p>
+      <p><span>Details of Loss: </span>{application.detailsOfLoss}</p>
+      <p><span>Compensation Amount: </span>{application.compensationAmount}</p>
+      <p><span>Date of Disaster: </span>{new Date(application.dateOfDisaster).toLocaleDateString()}</p>
+      <p><span>Bank Name: </span>{application.bankDetails?.bankName}</p>
+      <p><span>Account Number: </span>{application.bankDetails?.accountNumber}</p>
+      <p><span>Account Holder Name: </span>{application.bankDetails?.accountHolderName}</p>
       <p></p>
+    </div>
     </div>
   );
 }

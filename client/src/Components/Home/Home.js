@@ -18,7 +18,7 @@ function Home() {
     const items = [
         { 
             id: 1, 
-            src: '50.jpg', 
+            src: '77.jpg', 
             alt: 'Slide 1', 
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
