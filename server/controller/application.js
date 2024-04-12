@@ -2,6 +2,7 @@ const Application = require('../Models/Application');
 const cloudinary = require('cloudinary');
 const dataUri = require('../utils/dataUri');
 const Admin = require("../Models/admin");
+const { deleteModel } = require('mongoose');
 const submitApplication = async(req,res)=>{
     try{
         console.log(req.body);
@@ -134,7 +135,6 @@ const getApprovedApplications = async (req, res) => {
 
 }
 
-
 const getApplicationById =  async (req, res) => {
     try {
       const applicationId = req.params.id;
@@ -160,4 +160,31 @@ const getApplicationById =  async (req, res) => {
     }
   };
 
-module.exports = {submitApplication,getApplication,updateApplication,getApplicationById,getReviewedApplications,getApprovedApplications};
+const confirmDonation = async(req,res) => {
+    try {
+        const application = await Application.findById(req.params.id);
+    
+        if (!application) {
+          return res.status(404).json({ error: 'Application not found' });
+        }
+
+        application.numberDonations += 1;
+        application.remainingAmount -= req.body.donationAmount;
+    
+        await application.save();
+        res.json({ success: true, message: 'Donation confirmed successfully' });
+      } catch (error) {
+        res.status(500).json({ success: false, error: error.message });
+      }    
+};
+
+const deleteApplication = async(req,res) =>{
+    try {
+        const application = await Application.findByIdAndDelete(req.params.id);
+        res.status(200).json({ success: true, message: "Deletion Successful"});
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Error fetching approved applications' });
+    }
+}
+
+module.exports = {submitApplication,getApplication,updateApplication,getApplicationById,getReviewedApplications,getApprovedApplications, confirmDonation,deleteApplication};

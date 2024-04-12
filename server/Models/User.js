@@ -29,16 +29,12 @@ const User = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref:"Application",
     },
-    donate:{
-        amountDonated:{
-            type:Number,
-            default: 0,
-        },
-        numOfDonations:{
-            type:Number,
-            default: 0,
-        }
+    
+    amountDonated:{
+        type:Number,
+        default: 0,
     },
+    
     //Applied and donated donations--> as objects
 });
 

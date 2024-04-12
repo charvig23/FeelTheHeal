@@ -118,5 +118,15 @@
   background-repeat: no-repeat;
   background-position: 7%;
   }
+
+  .donate-button{
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
   
   

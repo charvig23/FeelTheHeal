@@ -119,6 +119,9 @@ const Donation = () => {
                 <Timer deadline={new Date(listing.deadline)} />
                 <button onClick={() => handleViewDetailsClick(listing._id)}>View Details</button>
               </div>
+              <div>
+            {/* <button className='donate-button'>Donate</button> */}
+          </div> 
             </div>
           ))}
         </div>

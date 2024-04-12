@@ -89,10 +89,20 @@ const donationAppSchema = new mongoose.Schema({
         type: Date,
         default: null 
       },
-      review: {
+    review: {
         type: Boolean,
         default: false, 
       },
+    numberDonations:{
+      type: Number,
+      default: 0,
+    },
+    remainingAmount:{
+      type: Number,
+      default: function() {
+        return this.compensationAmount;
+    },
+  },
     createdAt: {
         type: Date,
         default: Date.now,

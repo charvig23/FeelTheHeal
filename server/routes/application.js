@@ -11,5 +11,8 @@ router.route("/get-application").get(adminAuthMiddleware, applicationController.
 router.route("/application/:id").put(adminAuthMiddleware, applicationController.updateApplication).get(adminAuthMiddleware, applicationController.getApplicationById);
 router.get('/reviewedApplications', adminAuthMiddleware, applicationController.getReviewedApplications);
 router.route('/approved/applications').get(applicationController.getApprovedApplications);
+router.route('/confirm/donation/:id').post(applicationController.confirmDonation);
+router.route('/delete/application/:id').get(applicationController.deleteApplication);
+
 
 module.exports = router;

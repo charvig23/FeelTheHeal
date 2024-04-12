@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Stack from './Stack.js';
+import Header from '../Header/Header.js';
 import { Pagination } from 'react-bootstrap';
 import './DonationDashboard.css'; // Import the CSS file
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function DonationDashboard() {
-  const stacksPerPage = 7;
+  const stacksPerPage = 4;
   const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState(1); 
   const [applicationData, setApplicationData] = useState([]);
@@ -57,6 +58,7 @@ function DonationDashboard() {
 
   return (
     <>
+    <Header/>
       <div className='Dona-page'>
         <div className='Dona-head'><h1>Donations </h1></div>
         <div className="stack-container">
