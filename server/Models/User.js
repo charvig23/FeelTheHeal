@@ -29,7 +29,6 @@ const User = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref:"Application",
     },
-    
     amountDonated:{
         type:Number,
         default: 0,
